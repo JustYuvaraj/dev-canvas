@@ -1,13 +1,15 @@
-import React from "react";
+import Button from "./Button";
 import Alert from "./Alert";
-import Message from "./Message";
 const App = () => {
-  const names = ["John", "Jane", "Doe", "Smith"];
-
   // names = [];
 
   return (
     <>
+      <Button
+        color="danger"
+        childern="Vanakam Chennei"
+        onClick={() => console.log("hello")}
+      />
       <Alert />
     </>
   );
