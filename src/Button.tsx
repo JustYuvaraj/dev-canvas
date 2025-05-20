@@ -1,9 +1,9 @@
 interface ButtonProps {
   childern: string;
-  color?: "primary" | "secondary" | "danger";
+  color: string;
   onClick: () => void;
 }
-const Button = ({ childern, color = "primary", onClick }: ButtonProps) => {
+const Button = ({ childern, color, onClick }: ButtonProps) => {
   return (
     <button className={"btn btn-" + color} onClick={onClick}>
       {childern}
